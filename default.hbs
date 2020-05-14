@@ -71,8 +71,10 @@
     </script>
     <script type="text/javascript" src="{{asset "built/jquery.fitvids.js"}}"></script>
 
-    <script src="{{asset "built/infinitescroll.js"}}"></script>
-
+    {{^is "home"}}
+      <script src="{{asset "built/infinitescroll.js"}}"></script>
+    {{/is}}
+    
     {{!-- Scripts for Members subscription --}}
     <script>
         // Parse the URL parameter
